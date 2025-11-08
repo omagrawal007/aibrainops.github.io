@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import App from './App';
 import './index.css';
+// Import highlight.js styles for code syntax highlighting
+import 'highlight.js/styles/github-dark.css';
 
 // Initialize i18n here when we add translations
 

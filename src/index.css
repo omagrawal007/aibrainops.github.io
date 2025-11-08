@@ -115,10 +115,24 @@
     }
     
     pre {
-      @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-6;
+      @apply bg-gray-100 dark:bg-black text-gray-900 dark:text-white p-4 rounded-lg overflow-x-auto my-6;
       code {
-        @apply bg-transparent p-0 text-sm;
+        @apply bg-transparent p-0 text-sm text-inherit;
+        color: inherit;
       }
+    }
+    
+    /* Ensure highlight.js syntax highlighting works with dark backgrounds */
+    pre.hljs,
+    pre code.hljs {
+      background: rgb(0 0 0) !important; /* black */
+      color: rgb(255 255 255) !important; /* white */
+    }
+    
+    .dark pre.hljs,
+    .dark pre code.hljs {
+      background: rgb(0 0 0) !important; /* black */
+      color: rgb(255 255 255) !important; /* white */
     }
     
     ul, ol {

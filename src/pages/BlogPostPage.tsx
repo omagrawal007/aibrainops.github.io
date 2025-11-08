@@ -140,13 +140,17 @@ const BlogPostPage: React.FC = () => {
             blockquote: ({node, ...props}) => (
               <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-700 dark:text-gray-300 my-6" {...props} />
             ),
-            code: ({node, inline, ...props}) => 
-              inline ? (
-                <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm" {...props} />
+            code: (props: any) => {
+              // Check if code is inline (block code has language class)
+              const className = props.className || '';
+              const isInline = !className.includes('language-');
+              return isInline ? (
+                <code className="bg-gray-100 dark:bg-gray-800 dark:text-gray-100 px-2 py-1 rounded text-sm" {...props} />
               ) : (
-                <code className="block bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto" {...props} />
-              ),
-            pre: ({node, ...props}) => <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4" {...props} />,
+                <code className="block bg-gray-100 dark:bg-gray-900 dark:text-white p-4 rounded-lg overflow-x-auto" {...props} />
+              );
+            },
+            pre: ({node, ...props}) => <pre className="bg-gray-100 dark:bg-black dark:text-white p-4 rounded-lg overflow-x-auto mb-4" {...props} />,
             a: ({node, ...props}) => <a className="text-blue-600 hover:text-blue-800 underline" {...props} />,
             img: ({node, ...props}) => <img className="max-w-full h-auto rounded-lg my-6" {...props} />,
           }}
