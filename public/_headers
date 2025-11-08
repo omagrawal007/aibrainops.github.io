@@ -1,39 +1,69 @@
-# JavaScript files
-*.js
-  Content-Type: application/javascript
+# JavaScript files - match all .js files in any directory
+/*.js
+  Content-Type: application/javascript; charset=utf-8
+/assets/*.js
+  Content-Type: application/javascript; charset=utf-8
+/assets/**/*.js
+  Content-Type: application/javascript; charset=utf-8
+/**/*.js
+  Content-Type: application/javascript; charset=utf-8
 
-# TypeScript files
-*.ts
-  Content-Type: application/javascript
+# TypeScript files (for source maps)
+/*.ts
+  Content-Type: application/javascript; charset=utf-8
+/assets/*.ts
+  Content-Type: application/javascript; charset=utf-8
+/assets/**/*.ts
+  Content-Type: application/javascript; charset=utf-8
+/**/*.ts
+  Content-Type: application/javascript; charset=utf-8
 
 # JSX files
-*.jsx
-  Content-Type: application/javascript
+/*.jsx
+  Content-Type: application/javascript; charset=utf-8
+/assets/*.jsx
+  Content-Type: application/javascript; charset=utf-8
+/**/*.jsx
+  Content-Type: application/javascript; charset=utf-8
 
 # TSX files
-*.tsx
-  Content-Type: application/javascript
+/*.tsx
+  Content-Type: application/javascript; charset=utf-8
+/assets/*.tsx
+  Content-Type: application/javascript; charset=utf-8
+/**/*.tsx
+  Content-Type: application/javascript; charset=utf-8
 
 # CSS files
-*.css
-  Content-Type: text/css
+/*.css
+  Content-Type: text/css; charset=utf-8
+/assets/*.css
+  Content-Type: text/css; charset=utf-8
+/**/*.css
+  Content-Type: text/css; charset=utf-8
 
 # HTML files
-*.html
-  Content-Type: text/html
+/*.html
+  Content-Type: text/html; charset=utf-8
+/**/*.html
+  Content-Type: text/html; charset=utf-8
 
 # XML files (including sitemap.xml)
-*.xml
-  Content-Type: application/xml
+/*.xml
+  Content-Type: application/xml; charset=utf-8
+/**/*.xml
+  Content-Type: application/xml; charset=utf-8
 
 # RSS feed
-rss.xml
-  Content-Type: application/rss+xml
+/rss.xml
+  Content-Type: application/rss+xml; charset=utf-8
 
 # Web manifest
-*.webmanifest
-  Content-Type: application/manifest+json
+/*.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+/**/*.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
 
 # Robots.txt
-robots.txt
-  Content-Type: text/plain
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
