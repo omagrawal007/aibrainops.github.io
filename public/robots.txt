@@ -2,8 +2,8 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://blog.smsidea.in/sitemap.xml
-Sitemap: https://blog.smsidea.in/rss.xml
+Sitemap: https://blog.aibrainops.com/sitemap.xml
+Sitemap: https://blog.aibrainops.com/rss.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

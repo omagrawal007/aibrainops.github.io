@@ -13,9 +13,9 @@ type SEOProps = {
   category?: string;
 };
 
-const DEFAULT_IMAGE = "https://blog.smsidea.in/images/og-blog.png";
+const DEFAULT_IMAGE = "https://blog.aibrainops.com/images/og-blog.png";
 const SITE_NAME = "AI Agency Blog";
-const SITE_URL = "https://blog.smsidea.in/";
+const SITE_URL = "https://blog.aibrainops.com/";
 const DEFAULT_AUTHOR = "Ankit - AI Agency";
 
 export function useSEO({
@@ -103,7 +103,7 @@ export function useSEO({
           "name": "AI Agency",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://blog.smsidea.in/images/logo.svg"
+            "url": "https://blog.aibrainops.com/images/logo.svg"
           }
         },
         "datePublished": publishedTime,

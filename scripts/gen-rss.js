@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import RSS from "rss";
 import { fileURLToPath } from "url";
 
-const SITE_URL = "https://blog.smsidea.in";
+const SITE_URL = "https://blog.aibrainops.com";
 const FEED_URL = `${SITE_URL}/rss.xml`;
 
 const __filename = fileURLToPath(import.meta.url);

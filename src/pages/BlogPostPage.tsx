@@ -18,8 +18,8 @@ const BlogPostPage: React.FC = () => {
   useSEO({
     title: post?.title || 'Blog Post',
     description: post?.excerpt || post?.description || 'AI and DevOps insights',
-    image: post?.image || `https://blog.smsidea.in/images/blog/${slug}.png`,
-    url: `https://blog.smsidea.in/blog/${slug}`,
+    image: post?.image || `https://blog.aibrainops.com/images/blog/${slug}.png`,
+    url: `https://blog.aibrainops.com/blog/${slug}`,
     type: 'article',
     author: post?.author || 'AI Agency',
     publishedTime: post?.date,

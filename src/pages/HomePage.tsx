@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   useSEO({
     title: "AI & DevOps Services - Expert Development & Automation Solutions",
     description: "Leading AI Agency providing cutting-edge AI development, DevOps automation, and digital transformation services. Expert insights on AI, machine learning, automation, and cloud infrastructure.",
-    url: "https://blog.smsidea.in/"
+    url: "https://blog.aibrainops.com/"
   });
   
   useEffect(() => {

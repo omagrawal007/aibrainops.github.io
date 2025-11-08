@@ -83,7 +83,7 @@ Update the following files for your specific needs:
 
 ### Google Search Console
 1. Add your domain to Google Search Console
-2. Submit your sitemap: `https://blog.smsidea.in/sitemap.xml`
+2. Submit your sitemap: `https://blog.aibrainops.com/sitemap.xml`
 3. Monitor search performance and indexing
 
 ### Analytics Setup

@@ -13,7 +13,7 @@ const BlogPage: React.FC = () => {
   useSEO({
     title: "AI & DevOps Blog - Expert Insights & Best Practices",
     description: "Explore our comprehensive collection of AI development, DevOps automation, and digital transformation insights. Expert articles on machine learning, cloud infrastructure, and automation.",
-    url: "https://blog.smsidea.in/blog"
+    url: "https://blog.aibrainops.com/blog"
   });
 
   useEffect(() => {

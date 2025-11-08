@@ -3,7 +3,7 @@ import { glob } from 'glob';
 import matter from 'gray-matter';
 import path from 'path';
 
-const SITE_URL = 'https://blog.smsidea.in';
+const SITE_URL = 'https://blog.aibrainops.com';
 
 // Static pages with their priorities
 const staticPages = [

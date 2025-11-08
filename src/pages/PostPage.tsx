@@ -10,8 +10,8 @@ export default function PostPage() {
   useSEO({
     title: post.title,
     description: post.excerpt,
-    image: post.image || "https://blog.smsidea.in/images/og-blog.png",
-    url: `https://blog.smsidea.in/${slug}`,
+    image: post.image || "https://blog.aibrainops.com/images/og-blog.png",
+    url: `https://blog.aibrainops.com/${slug}`,
   });
 
   return (
