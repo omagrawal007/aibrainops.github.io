@@ -1,0 +1,39 @@
+# JavaScript files
+*.js
+  Content-Type: application/javascript
+
+# TypeScript files
+*.ts
+  Content-Type: application/javascript
+
+# JSX files
+*.jsx
+  Content-Type: application/javascript
+
+# TSX files
+*.tsx
+  Content-Type: application/javascript
+
+# CSS files
+*.css
+  Content-Type: text/css
+
+# HTML files
+*.html
+  Content-Type: text/html
+
+# XML files (including sitemap.xml)
+*.xml
+  Content-Type: application/xml
+
+# RSS feed
+rss.xml
+  Content-Type: application/rss+xml
+
+# Web manifest
+*.webmanifest
+  Content-Type: application/manifest+json
+
+# Robots.txt
+robots.txt
+  Content-Type: text/plain

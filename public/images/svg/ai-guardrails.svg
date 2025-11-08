@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#F3F4F6"/>
+    
+    <!-- Shield Base -->
+    <path d="M400 40L100 140V280C100 380 400 460 400 460C400 460 700 380 700 280V140L400 40Z" fill="#4F46E5" stroke="#312E81" stroke-width="4"/>
+    
+    <!-- Shield Design -->
+    <path d="M400 60L150 150V270C150 355.5 400 440 400 440C400 440 650 355.5 650 270V150L400 60Z" fill="#6366F1" stroke="#312E81" stroke-width="2"/>
+    
+    <!-- Lock Icon -->
+    <rect x="350" y="180" width="100" height="120" rx="10" fill="#312E81"/>
+    <rect x="380" y="130" width="40" height="50" rx="5" fill="#312E81"/>
+    <circle cx="400" cy="240" r="15" fill="#4ADE80"/>
+    
+    <!-- Circuit Pattern -->
+    <path d="M300 320H500M400 250V390M350 280H450M350 350H450" stroke="#312E81" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Title Text -->
+    <text x="400" y="450" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">AI Safety Guardrails</text>
+</svg>

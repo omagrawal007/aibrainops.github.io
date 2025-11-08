@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[AI Agency Blog]]></title>
+        <description><![CDATA[Expert insights on AI development, DevOps automation, and digital transformation. Leading AI Agency providing cutting-edge technology solutions.]]></description>
+        <link>https://blog.smsidea.in</link>
+        <image>
+            <url>https://blog.smsidea.in/images/og-blog.png</url>
+            <title>AI Agency Blog</title>
+            <link>https://blog.smsidea.in</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 30 Aug 2025 18:08:41 GMT</lastBuildDate>
+        <atom:link href="https://blog.smsidea.in/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 30 Aug 2025 18:08:41 GMT</pubDate>
+        <language><![CDATA[en]]></language>
+        <ttl>60</ttl>
+        <item>
+            <title><![CDATA[🚀 RAG that Actually Work in Production]]></title>
+            <description><![CDATA[Discover how to implement enterprise-grade AI safety measures using a powerful combination of regex patterns, custom functions, and specialized monitoring tools.]]></description>
+            <link>https://blog.smsidea.in/blog/RAG</link>
+            <guid isPermaLink="false">https://blog.smsidea.in/blog/RAG</guid>
+            <category><![CDATA[AI Engineering]]></category>
+            <dc:creator><![CDATA[Ripple AI Team]]></dc:creator>
+            <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+            <enclosure url="https://blog.smsidea.in/images/blog/RAG.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[AI-Powered SEO: A Practical Playbook for Smart Marketers]]></title>
+            <description><![CDATA[Discover how to leverage AI for SEO without risking search engine penalties. Our practical playbook shows you how to use AI wisely for better search rankings.]]></description>
+            <link>https://blog.smsidea.in/blog/ai-seo-playbook</link>
+            <guid isPermaLink="false">https://blog.smsidea.in/blog/ai-seo-playbook</guid>
+            <category><![CDATA[SEO]]></category>
+            <dc:creator><![CDATA[Ripple AI Team]]></dc:creator>
+            <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+            <enclosure url="https://blog.smsidea.in/images/blog/ai-seo-playbook.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[From Canned Replies to AI-Powered Smart Actions: A Guide for Support Teams]]></title>
+            <description><![CDATA[Upgrade your customer support with AI-powered smart actions that go beyond static macros to deliver personalized, efficient service at scale.]]></description>
+            <link>https://blog.smsidea.in/blog/ai-powered-smart-actions</link>
+            <guid isPermaLink="false">https://blog.smsidea.in/blog/ai-powered-smart-actions</guid>
+            <category><![CDATA[Customer Support]]></category>
+            <dc:creator><![CDATA[Ripple AI Team]]></dc:creator>
+            <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+            <enclosure url="https://blog.smsidea.in/images/blog/ai-powered-smart-actions.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[🚀 TikTok→WhatsApp→Checkout: The 3-Hop Funnel That Prints Leads]]></title>
+            <link>https://blog.smsidea.in/blog/tiktok-whatsapp-checkout-funnel</link>
+            <guid isPermaLink="false">https://blog.smsidea.in/blog/tiktok-whatsapp-checkout-funnel</guid>
+            <category><![CDATA[Marketing]]></category>
+            <dc:creator><![CDATA[AI Agency]]></dc:creator>
+            <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
+            <enclosure url="https://blog.smsidea.in/images/blog/tiktok-whatsapp-checkout-funnel.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[LLM Cost Control: Token Budgets, Caching, and Fallbacks]]></title>
+            <description><![CDATA[Learn how to manage LLM costs effectively with token budgets, intelligent caching, and smart fallback strategies.]]></description>
+            <link>https://blog.smsidea.in/blog/llm-cost-control</link>
+            <guid isPermaLink="false">https://blog.smsidea.in/blog/llm-cost-control</guid>
+            <category><![CDATA[AI Engineering]]></category>
+            <dc:creator><![CDATA[Ripple AI Team]]></dc:creator>
+            <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
+            <enclosure url="https://blog.smsidea.in/images/blog/llm-cost-control.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[🚀 Guardrails That Actually Work in Production]]></title>
+            <description><![CDATA[Discover how to implement enterprise-grade AI safety measures using a powerful combination of regex patterns, custom functions, and specialized monitoring tools.]]></description>
+            <link>https://blog.smsidea.in/blog/ai-guardrails</link>
+            <guid isPermaLink="false">https://blog.smsidea.in/blog/ai-guardrails</guid>
+            <category><![CDATA[AI Engineering]]></category>
+            <dc:creator><![CDATA[Ripple AI Team]]></dc:creator>
+            <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
+            <enclosure url="https://blog.smsidea.in/images/blog/ai-guardrails.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>

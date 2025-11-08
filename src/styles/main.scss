@@ -1,0 +1,773 @@
+// Professional color system with sophisticated slate-based theme
+:root {
+  // Primary brand colors - professional and modern
+  --color-primary: 220, 13%, 18%;  // Dark slate for primary elements
+  --color-secondary: 220, 9%, 46%;  // Medium slate for secondary elements
+  --color-accent: 210, 100%, 50%;   // Professional blue accent
+  --color-success: 160, 84%, 39%;   // Professional green
+  --color-warning: 38, 92%, 50%;    // Professional amber
+  --color-error: 0, 84%, 60%;       // Professional red
+  
+  // Light theme - clean and professional
+  --color-text: 220, 13%, 18%;      // Dark slate for text
+  --color-text-light: 220, 9%, 46%; // Medium slate for secondary text
+  --color-bg: 0, 0%, 100%;          // Pure white background
+  --color-bg-secondary: 220, 14%, 96%; // Very light slate
+  --color-border: 220, 13%, 91%;    // Light slate borders
+  --color-card: 0, 0%, 100%;        // White cards
+  
+  // Professional shadows with subtle color tint
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  
+  // Border radius
+  --radius-sm: 0.375rem;
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+  
+  // Fallback colors for better compatibility
+  --fallback-text: #1e293b;
+  --fallback-bg: #ffffff;
+}
+
+// Dark theme overrides - sophisticated and professional
+.dark {
+  // Text colors
+  --color-text: 220, 14%, 96%;      // Light slate for text
+  --color-text-light: 220, 9%, 64%; // Medium light slate for secondary text
+  
+  // Background colors - sophisticated dark slate
+  --color-bg: 220, 13%, 18%;        // Dark slate background
+  --color-bg-secondary: 220, 13%, 22%; // Slightly lighter slate
+  --color-border: 220, 13%, 25%;    // Medium slate borders
+  --color-card: 220, 13%, 20%;      // Card background
+  
+  // Enhanced colors in dark mode
+  --color-primary: 210, 100%, 50%;  // Bright blue for primary
+  --color-secondary: 220, 9%, 64%;  // Light slate for secondary
+  --color-accent: 210, 100%, 60%;   // Bright blue accent
+  --color-success: 160, 84%, 45%;   // Bright green
+  --color-warning: 38, 92%, 55%;    // Bright amber
+  --color-error: 0, 84%, 65%;       // Bright red
+  
+  // Dark mode shadows - more pronounced
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  
+  // Fallback colors for dark mode
+  --fallback-text: #f1f5f9;
+  --fallback-bg: #1e293b;
+}
+
+// Modern base styles with improved typography and smooth transitions
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid hsl(var(--color-border));
+}
+
+// Smooth scrolling and text rendering
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// Base body styles with modern font stack and theming
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: hsl(var(--color-text), var(--fallback-text)) !important;
+  background-color: hsl(var(--color-bg), var(--fallback-bg));
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt', 'onum', 'pnum';
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Better media defaults
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Remove default button styles
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+}
+
+// Focus styles for better accessibility
+:focus-visible {
+  outline: 2px solid hsl(var(--color-primary));
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+// Remove animations for people who've turned them off
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Fluid typography with modern scale
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1440;
+  --fluid-min-scale: 1.2;
+  --fluid-max-scale: 1.333;
+  
+  --fluid-screen: 100vw;
+  --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width)));
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+// Fluid typography function
+@function fluid-type($min, $max) {
+  @return calc(#{$min}rem + (var(--fluid-min-scale) * 1rem) + (var(--fluid-max-scale) - var(--fluid-min-scale)) * var(--fluid-bp));
+}
+
+// Modern typography with fluid scaling and better vertical rhythm
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  color: hsl(var(--color-text)) !important;
+  letter-spacing: -0.02em;
+  font-kerning: normal;
+  
+  & + * {
+    margin-top: 0 !important;
+  }
+}
+
+h1 { 
+  font-size: fluid-type(2.5, 4);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  max-width: 30ch;
+}
+
+h2 { 
+  font-size: fluid-type(2, 3);
+  line-height: 1.15;
+  margin-bottom: 1.75rem;
+  max-width: 35ch;
+}
+
+h3 { 
+  font-size: fluid-type(1.75, 2.25);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 40ch;
+}
+
+h4 { 
+  font-size: fluid-type(1.5, 1.75);
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+  max-width: 45ch;
+}
+
+h5 { 
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  max-width: 50ch;
+}
+
+h6 { 
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+// Paragraph and text elements
+p, li, blockquote, figcaption {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+  color: hsl(var(--color-text));
+  max-width: 65ch;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Links with smooth hover and focus states
+a {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-primary));
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.7;
+  }
+  
+  &:hover, &:focus {
+    color: hsl(var(--color-primary));
+    text-decoration: none;
+    
+    &::after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  &:focus-visible {
+    outline: 2px solid hsl(var(--color-primary));
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+// Modern container with responsive padding and max-width
+.container {
+  --gutter: 1.5rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  position: relative;
+  
+  // Responsive padding
+  @media (min-width: 640px) {
+    --gutter: 2rem;
+  }
+  
+  @media (min-width: 1024px) {
+    --gutter: 4rem;
+  }
+  
+  // Full-bleed utility
+  &--full {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  // Narrow container for text content
+  &--narrow {
+    max-width: 65ch;
+  }
+  
+  // Container with vertical padding
+  &--padded {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+    @media (min-width: 768px) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+}
+
+// Responsive spacing utilities
+.section {
+  padding: 4rem 0;
+  
+  &--sm {
+    padding: 2rem 0;
+  }
+  
+  &--lg {
+    padding: 6rem 0;
+    
+    @media (min-width: 1024px) {
+      padding: 8rem 0;
+    }
+  }
+  
+  &--xl {
+    padding: 8rem 0;
+    
+    @media (min-width: 1024px) {
+      padding: 12rem 0;
+    }
+  }
+}
+
+// Grid system
+.grid {
+  --grid-min: 16rem;
+  --grid-gap: 2rem;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--grid-min)), 1fr));
+  gap: var(--grid-gap);
+  margin: 2rem 0;
+  
+  // Grid variants
+  &--2 {
+    --grid-min: 20rem;
+  }
+  
+  &--3 {
+    --grid-min: 16rem;
+  }
+  
+  &--4 {
+    --grid-min: 12rem;
+  }
+  
+  &--fluid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min)), 1fr));
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 640px) {
+    --grid-gap: 1.5rem;
+    
+    &--responsive {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Flexbox utility for quick layouts
+.flex {
+  --gap: 1rem;
+  
+  display: flex;
+  gap: var(--gap);
+  
+  &--column {
+    flex-direction: column;
+  }
+  
+  &--wrap {
+    flex-wrap: wrap;
+  }
+  
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &--between {
+    justify-content: space-between;
+  }
+  
+  &--grow > * {
+    flex: 1;
+  }
+  
+  &--gap-sm {
+    --gap: 0.5rem;
+  }
+  
+  &--gap-lg {
+    --gap: 2rem;
+  }
+}
+
+// Modern button component with variants and states
+.btn {
+  --btn-bg: hsl(var(--color-primary));
+  --btn-text: white;
+  --btn-hover-bg: hsl(var(--color-primary) / 0.9);
+  --btn-active-bg: hsl(var(--color-primary) / 0.8);
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  touch-action: manipulation;
+  position: relative;
+  overflow: hidden;
+  
+  // Button states
+  &:hover {
+    background-color: var(--btn-hover-bg);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+  }
+  
+  &:active {
+    background-color: var(--btn-active-bg);
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid hsl(var(--color-primary));
+    outline-offset: 2px;
+  }
+  
+  // Button variants
+  &--primary {
+    --btn-bg: hsl(var(--color-primary));
+    --btn-text: white;
+    --btn-hover-bg: hsl(var(--color-primary) / 0.9);
+    --btn-active-bg: hsl(var(--color-primary) / 0.8);
+  }
+  
+  &--secondary {
+    --btn-bg: hsl(var(--color-secondary));
+    --btn-text: white;
+    --btn-hover-bg: hsl(var(--color-secondary) / 0.9);
+    --btn-active-bg: hsl(var(--color-secondary) / 0.8);
+  }
+  
+  &--outline {
+    --btn-bg: transparent;
+    --btn-text: hsl(var(--color-primary));
+    --btn-hover-bg: hsl(var(--color-primary) / 0.1);
+    --btn-active-bg: hsl(var(--color-primary) / 0.2);
+    border-color: currentColor;
+    
+    &:hover {
+      background-color: var(--btn-hover-bg);
+      transform: translateY(-1px);
+    }
+  }
+  
+  &--ghost {
+    --btn-bg: transparent;
+    --btn-text: hsl(var(--color-text));
+    --btn-hover-bg: hsl(var(--color-text) / 0.05);
+    --btn-active-bg: hsl(var(--color-text) / 0.1);
+    
+    &:hover {
+      background-color: var(--btn-hover-bg);
+      transform: translateY(-1px);
+    }
+  }
+  
+  // Button sizes
+  &--sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  &--lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+  
+  // Button with icon
+  &--icon {
+    padding: 0.5rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+  }
+  
+  // Disabled state
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  // Loading state
+  &--loading {
+    color: transparent;
+    pointer-events: none;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1.25rem;
+      height: 1.25rem;
+      top: 50%;
+      left: 50%;
+      margin: -0.625rem 0 0 -0.625rem;
+      border: 2px solid currentColor;
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: button-spinner 0.75s linear infinite;
+    }
+  }
+}
+
+@keyframes button-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Modern card component with multiple variants and hover effects
+.card {
+  --card-bg: hsl(var(--color-card));
+  --card-border: hsl(var(--color-border));
+  --card-shadow: var(--shadow);
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  
+  // Card hover effect
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: hsl(var(--color-primary) / 0.3);
+    
+    .card__image {
+      transform: scale(1.03);
+    }
+  }
+  
+  // Card image container
+  &__image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; // 16:9 aspect ratio
+    overflow: hidden;
+  }
+  
+  // Card image
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  // Card content
+  &__content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  // Card header
+  &__header {
+    margin-bottom: 1rem;
+  }
+  
+  // Card title
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: hsl(var(--color-text));
+  }
+  
+  // Card meta (date, author, etc.)
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: hsl(var(--color-text-light));
+    margin-bottom: 0.5rem;
+  }
+  
+  // Card description
+  &__description {
+    color: hsl(var(--color-text-light));
+    margin: 0 0 1.5rem 0;
+    flex: 1;
+  }
+  
+  // Card footer
+  &__footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid hsl(var(--color-border) / 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  // Card actions
+  &__actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
+  
+  // Card tags
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  // Card tag
+  &__tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: hsl(var(--color-primary) / 0.1);
+    color: hsl(var(--color-primary));
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background-color: hsl(var(--color-primary) / 0.2);
+    }
+  }
+  
+  // Card variants
+  &--elevated {
+    --card-shadow: var(--shadow-md);
+    
+    &:hover {
+      --card-shadow: var(--shadow-lg);
+    }
+  }
+  
+  &--bordered {
+    border: 1px solid var(--card-border);
+  }
+  
+  &--hover-scale {
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  &--glass {
+    background: hsl(var(--color-card) / 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--color-border) / 0.2);
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    &__content {
+      padding: 1.25rem;
+    }
+    
+    &__title {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+// Grid system
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+// Utility classes
+.text-center { text-align: center; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-8 { margin-bottom: 2rem; }
+
+// Animations
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+// Responsive utilities
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+// Force text visibility - emergency fix for text color issues
+* {
+  color: inherit;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, span, div, article, section, nav, header, footer, main, aside {
+  color: hsl(var(--color-text), var(--fallback-text)) !important;
+}
+
+// Ensure dark mode text is visible
+.dark body, .dark p, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, 
+.dark span, .dark div, .dark article, .dark section, .dark nav, .dark header, .dark footer, .dark main, .dark aside {
+  color: hsl(var(--color-text), var(--fallback-text)) !important;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#F0F9FF"/>
+    
+    <!-- Funnel -->
+    <path d="M150 100H650L550 200H250L150 100Z" fill="#0EA5E9" stroke="#0369A1" stroke-width="2"/>
+    <path d="M200 220H600L500 320H300L200 220Z" fill="#38BDF8" stroke="#0369A1" stroke-width="2"/>
+    <path d="M250 340H550L475 400H325L250 340Z" fill="#7DD3FC" stroke="#0369A1" stroke-width="2"/>
+    
+    <!-- Icons -->
+    <g transform="translate(300, 120)">
+        <rect x="0" y="0" width="60" height="60" rx="30" fill="#FF0050" opacity="0.9"/>
+        <text x="30" y="38" font-family="Arial" font-size="36" text-anchor="middle" fill="white">T</text>
+    </g>
+    
+    <g transform="translate(370, 120)">
+        <rect x="0" y="0" width="60" height="60" rx="30" fill="#25D366" opacity="0.9"/>
+        <text x="30" y="40" font-family="Arial" font-size="28" text-anchor="middle" fill="white">💬</text>
+    </g>
+    
+    <g transform="translate(440, 120)">
+        <rect x="0" y="0" width="60" height="60" rx="30" fill="#4F46E5" opacity="0.9"/>
+        <text x="30" y="40" font-family="Arial" font-size="28" text-anchor="middle" fill="white">💳</text>
+    </g>
+    
+    <!-- Arrows -->
+    <path d="M330 180L330 220" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowhead1)"/>
+    <path d="M400 240L400 280" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowhead2)"/>
+    
+    <!-- Labels -->
+    <text x="365" y="170" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E40AF">1. TikTok</text>
+    <text x="365" y="230" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E40AF">2. WhatsApp</text>
+    <text x="365" y="290" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E40AF">3. Checkout</text>
+    
+    <!-- Title -->
+    <text x="400" y="70" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#0369A1">3-Hop Conversion Funnel</text>
+    
+    <!-- Stats -->
+    <g transform="translate(200, 400)">
+        <rect x="0" y="0" width="120" height="60" rx="10" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+        <text x="60" y="25" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0C4A6E">+47%</text>
+        <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#0C4A6E">Conversion</text>
+    </g>
+    
+    <g transform="translate(340, 400)">
+        <rect x="0" y="0" width="120" height="60" rx="10" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+        <text x="60" y="25" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0C4A6E">3x</text>
+        <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#0C4A6E">Engagement</text>
+    </g>
+    
+    <g transform="translate(480, 400)">
+        <rect x="0" y="0" width="120" height="60" rx="10" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+        <text x="60" y="25" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0C4A6E">-35%</text>
+        <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#0C4A6E">Acquisition Cost</text>
+    </g>
+    
+    <defs>
+        <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#0EA5E9"/>
+        </marker>
+        <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#0EA5E9"/>
+        </marker>
+    </defs>
+</svg>

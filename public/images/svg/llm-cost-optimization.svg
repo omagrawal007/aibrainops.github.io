@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#F0FDF4"/>
+    
+    <!-- Graph Background -->
+    <rect x="100" y="100" width="600" height="300" rx="10" fill="white" stroke="#10B981" stroke-width="2"/>
+    
+    <!-- Graph Lines -->
+    <line x1="150" y1="350" x2="650" y2="350" stroke="#D1FAE5" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="150" y1="300" x2="650" y2="300" stroke="#D1FA5" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="150" y1="250" x2="650" y2="250" stroke="#D1FAE5" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="150" y1="200" x2="650" y2="200" stroke="#D1FAE5" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="150" y1="150" x2="650" y2="150" stroke="#D1FAE5" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Data Points -->
+    <circle cx="200" cy="300" r="6" fill="#10B981"/>
+    <circle cx="300" cy="250" r="6" fill="#10B981"/>
+    <circle cx="400" cy="200" r="6" fill="#10B981"/>
+    <circle cx="500" cy="220" r="6" fill="#10B981"/>
+    <circle cx="600" cy="180" r="6" fill="#10B981"/>
+    
+    <!-- Connecting Lines -->
+    <path d="M200 300L300 250L400 200L500 220L600 180" stroke="#10B981" stroke-width="3" fill="none"/>
+    
+    <!-- Budget Line -->
+    <path d="M150 250L650 250" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- Icons -->
+    <circle cx="200" cy="400" r="20" fill="#FEF3C7"/>
+    <text x="200" y="406" font-family="Arial" font-size="24" text-anchor="middle" fill="#D97706">1</text>
+    
+    <circle cx="400" cy="400" r="20" fill="#DBEAFE"/>
+    <text x="400" y="406" font-family="Arial" font-size="24" text-anchor="middle" fill="#2563EB">2</text>
+    
+    <circle cx="600" cy="400" r="20" fill="#E0F2FE"/>
+    <text x="600" y="406" font-family="Arial" font-size="24" text-anchor="middle" fill="#0369A1">3</text>
+    
+    <!-- Labels -->
+    <text x="200" y="440" font-family="Arial" font-size="16" text-anchor="middle" fill="#1F2937">Token Budgets</text>
+    <text x="400" y="440" font-family="Arial" font-size="16" text-anchor="middle" fill="#1F2937">Caching</text>
+    <text x="600" y="440" font-family="Arial" font-size="16" text-anchor="middle" fill="#1F2937">Fallbacks</text>
+    
+    <!-- Title -->
+    <text x="400" y="80" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#065F46">LLM Cost Optimization</text>
+</svg>
