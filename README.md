@@ -228,7 +228,7 @@ For SEO optimization questions or technical support:
 - Contact: ankit@crimsonbeans.com
 - Phone: +44 07733512058
 - Address: 33 Hanworth Road, Sunbury on Thames, TW16 5DA, U.K.
-- LinkedIn: [@cbankit](https://www.linkedin.com/in/cbankit/)
+- LinkedIn: [@cbankit](https://www.linkedin.com/in/omdevops/)
 - Documentation: [Link to docs]
 
 ---
