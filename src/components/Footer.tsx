@@ -44,8 +44,8 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4 text-slate-50">Contact</h4>
             <div className="space-y-3">
               <div>
-                <a href="mailto:ankit@crimsonbeans.com" className="text-slate-300 hover:text-slate-50 transition-colors duration-200">
-                  ankit@crimsonbeans.com
+                <a href="mailto:om@aibrainops.com" className="text-slate-300 hover:text-slate-50 transition-colors duration-200">
+                  om@aibrainops.com
                 </a>
               </div>
               <div>
